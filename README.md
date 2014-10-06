@@ -14,7 +14,7 @@ Running on Docker
 
 1. Launch a container called doradus:
 
-		docker run -p 1123:1123 -d --name doradus traduong1/docker-doradus-singlecontainer
+		docker run -p 1123:1123 -d --name doradus traduong1/docker-doradus-singleinstance
    The -p option tells docker to bind port 1123 on the host (your laptop) to port 1123 in the container
 
 2. Test

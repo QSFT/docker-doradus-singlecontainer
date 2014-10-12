@@ -13,9 +13,12 @@ Running on Docker
 ----------------
 
 1. Launch a container called ‘doradus’:
+		
+		mkdir /srv/cassandra
 
-		docker run -p 1123:1123 -d --name doradus traduong1/docker-doradus-singleinstance
-   The -p option tells docker to bind port 1123 on the host to port 1123 in the container
+		docker run -p 1123:1123 -d --name doradus -v /srv/cassandra:/var/lib/cassandra traduong1/docker-doradus-singleinstance
+
+		The -p option tells docker to bind port 1123 on the host to port 1123 in the container
 
 2. Test
 

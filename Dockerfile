@@ -1,6 +1,8 @@
 # Base operating system image
 FROM centos
 
+VOLUME ["/var/lib/cassandra"]
+
 # Plus some packages
 RUN yum install -y java-1.7.0-openjdk-devel.x86_64 which
 
